@@ -1,0 +1,76 @@
+.Header {
+  display: flex;
+  padding: 15px 20px;
+  justify-content: space-between;
+  position: sticky;
+  background-color: #ffffff;
+  z-index: 100;
+  top: 0;
+  box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+}
+
+.Header__Left {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Header__Input {
+  display: flex;
+  align-items: center;
+  background-color: #eff2f5;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 999px;
+}
+
+.Header__Input > input {
+  border: none;
+  background-color: transparent;
+  outline-width: 0;
+}
+
+.Header__Left > img {
+  height: 40px;
+}
+
+.Header__Center {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.Header__Option_Icon {
+  color: gray;
+}
+
+.Header__Option_Icon:hover {
+  color: #2e81f4;
+}
+
+.Header__Option {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+.Header__Option:hover {
+  background-color: #eff2f5;
+  border-radius: 10px;
+  align-items: center;
+  padding: 0 30px;
+  border-bottom: none;
+}
+
+.Header__Info {
+  display: flex;
+  align-items: center;
+}
+
+.Header__Info > h4 {
+  margin-left: 10px;
+}
+
+.Header__Right {
+  display: flex;
+}
