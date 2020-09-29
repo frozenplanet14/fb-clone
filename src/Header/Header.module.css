@@ -43,6 +43,14 @@
   color: gray;
 }
 
+.Header__Option_Active {
+  border-bottom: 4px solid #2e81f4;
+}
+
+.Header__Option_Active_Icon {
+  color: #2e81f4;
+}
+
 .Header__Option_Icon:hover {
   color: #2e81f4;
 }

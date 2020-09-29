@@ -22,13 +22,24 @@ function Header() {
         />
         <div className={classes.Header__Input}>
           <SearchIcon />
-          <input type="text" />
+          <input placeholder="Search Facebook" type="text" />
         </div>
       </div>
 
       <div className={classes.Header__Center}>
-        <div className={classes.Header__Option}>
-          <HomeIcon className={classes.Header__Option_Icon} fontSize="large" />
+        <div
+          className={[
+            classes.Header__Option,
+            classes.Header__Option_Active,
+          ].join(' ')}
+        >
+          <HomeIcon
+            className={[
+              classes.Header__Option_Icon,
+              classes.Header__Option_Active_Icon,
+            ].join(' ')}
+            fontSize="large"
+          />
         </div>
         <div className={classes.Header__Option}>
           <FlagIcon className={classes.Header__Option_Icon} fontSize="large" />
