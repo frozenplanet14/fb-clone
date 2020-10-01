@@ -1,4 +1,3 @@
-import userEvent from '@testing-library/user-event';
 import React from 'react';
 import * as classes from './Sidebar.module.css';
 import SidebarRow from './SidebarRow/SidebarRow';
@@ -9,14 +8,14 @@ import ChatIcon from '@material-ui/icons/Chat';
 import StorefrontIcon from '@material-ui/icons/Storefront';
 import VideoLibraryIcon from '@material-ui/icons/VideoLibrary';
 import ExpandMoreOutlinedIcon from '@material-ui/icons/ExpandMoreOutlined';
+import { useStateValue } from '../State/StateProvider';
 
 function Sidebar() {
+  const [{ user }] = useStateValue();
+
   return (
     <div className={classes.Sidebar}>
-      <SidebarRow
-        src="https://indianairforce.nic.in/sites/default/files/banner_09may19_1.jpg"
-        title="Suman Jha"
-      />
+      <SidebarRow src={user.photoURL} title={user.displayName} />
       <SidebarRow
         Icon={LocalHospitalIcon}
         title="COVID-19 Information Center"
